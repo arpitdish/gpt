@@ -15,11 +15,11 @@ user_input = st.text_area("Enter your text prompt here:")
 if user_input:
     st.write("You entered:", user_input)
 
-os.environ["REPLICATE_API_TOKEN"] = "r8_H7CLxvh7kI0IPk6nmjO10Lyq844IuIs0L1Sdg"
+os.environ["REPLICATE_API_TOKEN"] = 
 
 
 output = replicate.run(
-    "meta/llama-2-7b:73001d654114dad81ec65da3b834e2f691af1e1526453189b7bf36fb3f32d0f9",
+    "",
     input={"prompt": user_input}
 )
 
